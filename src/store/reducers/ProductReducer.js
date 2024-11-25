@@ -6,7 +6,6 @@ const initialValue = {
     cart:[],
 }
 
-// const {ALL_PRODUCTS} = productType
 export const ProductReducer = (state=initialValue,{type,payload}) => {
     switch(type){
         case productType.ALL_PRODUCTS:

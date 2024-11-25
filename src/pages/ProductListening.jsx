@@ -23,7 +23,8 @@ const ProductListening = () => {
   console.log(allProducts);
 
   return (
-    <div className="flex flex-wrap gap- justify-between mt-16 pt-16 m-5 p-5">
+    <div className="bg-pink-300 pt-10 h-auto pb-8">
+    <div className="flex flex-wrap gap- justify-between mt-16 pt-12 m-5 p-5">
         {loading ?
       <Row gutter={[16, 16]}>
         {allProducts?.map((item, index) => {
@@ -39,7 +40,8 @@ const ProductListening = () => {
       </div>    
 }
     </div>
+    </div>
   );
 };
 
-export default ProductListening;
+export default ProductListening
