@@ -46,8 +46,8 @@ const Header = () => {
       <header className="flex shadow-md px-4 sm:px-10  font-[sans-serif] min-h-[70px] tracking-wide z-50 fixed w-[100%] top-0 left-0 transition-all duration-300 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white ">
         <div className="flex flex-wrap items-center justify-around w-full p-3">
           <a
-            className="flex items-center lg:text-3xl md:text-2xl sm:text-xl font-extrabold hover:opacity-80 transition-opacity duration-300"
-            href="javascript:void(0)"
+            className="flex items-center lg:text-3xl cursor-pointer md:text-2xl sm:text-xl font-extrabold hover:opacity-80 transition-opacity duration-300"
+            onClick={() => console.log("Logo clicked!")}
           >
             <img
               src="/productStore.webp"
@@ -65,7 +65,7 @@ const Header = () => {
           >
             <ul className="lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
               <li className="mb-6 hidden max-lg:block">
-                <a href="javascript:void(0)">
+                <a href="#">
                   <img
                     src="https://readymadeui.com/readymadeui.svg"
                     alt="logo"
@@ -75,32 +75,32 @@ const Header = () => {
               </li>
               <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
                 <a
-                  href="javascript:void(0)"
-                  className=" hover:text-black font-bold transition-all duration-300 text-white block  text-[15px] p-2 rounded-xl"
+                  onClick={() => console.log("Home clicked!")}
+                  className=" hover:text-black font-bold transition-all duration-300 text-white block  text-[15px] p-2 rounded-xl cursor-pointer"
                 >
                   Home
                 </a>
               </li>
               <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
                 <a
-                  href="javascript:void(0)"
-                  className=" hover:text-black font-bold  transition-all duration-300 text-white block  text-[15px] p-2 rounded"
+                   onClick={() => console.log("Feature clicked!")}
+                  className=" hover:text-black font-bold  transition-all duration-300 text-white block  text-[15px] p-2 rounded cursor-pointer"
                 >
                   Feature
                 </a>
               </li>
               <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
                 <a
-                  href="javascript:void(0)"
-                  className=" hover:text-black font-bold  transition-all duration-300 text-white block  text-[15px] p-2 rounded"
+                 onClick={() => console.log("About clicked!")}
+                  className=" hover:text-black font-bold  transition-all duration-300 text-white block  text-[15px] p-2 rounded cursor-pointer"
                 >
                   About
                 </a>
               </li>
               <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
                 <a
-                  href="javascript:void(0)"
-                  className=" hover:text-black font-bold  transition-all duration-300 text-white block  text-[15px] p-2 rounded"
+                 onClick={() => console.log("Contact clicked!")}
+                  className=" hover:text-black font-bold  transition-all duration-300 text-white block  text-[15px] p-2 rounded cursor-pointer"
                 >
                   Contact
                 </a>
